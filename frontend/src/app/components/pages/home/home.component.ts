@@ -10,7 +10,7 @@ import { Food } from 'src/app/shared/models/Food';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  p: number = 1;
   foods: Food[] = [];
   constructor(private foodService: FoodService, activatedRoute: ActivatedRoute) {
     let foodsObservalbe:Observable<Food[]>;
